@@ -22,6 +22,5 @@ for filepath in filepaths:
     # add content to pdf
     pdf.set_font(family="Times", size=16, style="B")
     pdf.cell(w=50, h=8, txt=f"Invoice nr. {invoice_nr}")
-        
     
-pdf.output(f"PDFs/{filename}.pdf")
+    pdf.output(f"PDFs/{filename}.pdf")
