@@ -1,6 +1,6 @@
 # PDF Invoice Generator
 I am currently learning Python! This is a project from my python bootcamp 
-where I generate a pdf invoice file. As a data source I work with xlsx files.
+where I generate a pdf invoice file. As a data source I work with xlsx files. The focus of the lectures was on learning and further practising for-loops.
 
 If you like to automate your invoice process, clone this repo and have fun!
 
