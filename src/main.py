@@ -18,9 +18,15 @@ for filepath in filepaths:
     # extract filename and invoice number 
     filename = Path(filepath).stem
     invoice_nr = filename.split("-")[0]
+    invoice_date = filename.split("-")[1]
+    # add content to pdf
+    pdf.set_font(family="Times", size=16, style="B")
+    pdf.cell(w=50, h=8, txt=f"Invoice nr. {invoice_nr}", ln=1) 
     
     # add content to pdf
     pdf.set_font(family="Times", size=16, style="B")
-    pdf.cell(w=50, h=8, txt=f"Invoice nr. {invoice_nr}")
+    pdf.cell(w=50, h=8, txt=f"Date {invoice_date}", ln=2)
+    
     
     pdf.output(f"PDFs/{filename}.pdf")
+
